@@ -1,0 +1,23 @@
+{{ 'footer.css' | asset_url | stylesheet_tag }}
+
+<div class="footer-wrapper">
+    <div class="footer">
+        <div class="footer-links">
+            {% for link in linklists.main-menu.links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+            <a href=""> placeholder </a>
+        </div>
+         
+        <div class="logo">
+            <p> PLACEHOLDER </p>
+        </div>
+
+    </div>
+</div>
