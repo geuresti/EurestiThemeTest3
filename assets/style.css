@@ -7,3 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+p, a {
+    font-size: 10px;
+    /*font-family: */
+}
+
+.layout-wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}

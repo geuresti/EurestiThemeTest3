@@ -1,0 +1,14 @@
+p {
+    text-decoration: dashed;
+}
+
+.header {
+    background-color: aliceblue;
+    padding-top: 20px;
+    padding-right: 40px;
+    width: 100%;
+    /*left: 200px;*/
+
+    display: flex;
+    justify-content: space-between;
+}

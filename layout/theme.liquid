@@ -13,20 +13,16 @@
 </head>
 <body>
 
-  {% render 'header' %}
-  <!--
-  {% if shop.customer_accounts_enabled %}
-    {% if customer %}
-      <a href="/account">account</a>
-      {{ 'log out'  | customer_logout_link }}
-    {% else %}
-      {{ 'log in ' | customer_login_link }}
-      {{ 'register' | customer_register_link }}
-    {% endif %}
-  {% endif %}
--->
+  <div class="layout-wrapper">
+    <div>
+      {% render 'nav-menu' %}
+    </div>
+    <div>
+      {% render 'header' %}
 
-  {{ content_for_layout }}
+      {{ content_for_layout }}
+    </div>
+  </div>
 
   {% render 'footer' %}
 
