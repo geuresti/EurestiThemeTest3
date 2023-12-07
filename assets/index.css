@@ -1,0 +1,36 @@
+.products-wrapper {
+    background-color: lightgrey;
+    margin: 20px 30px 60px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 200px;
+    height: 250px;
+    background-color: wheat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+.pc-img-title {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+
+    height: 100%;
+}
+
+.pc-price-desc {
+    display: grid;
+    grid-template-rows: repeat(2, 10px);
+
+    background-color: yellow;
+}
