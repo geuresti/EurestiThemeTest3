@@ -1,36 +1,49 @@
 .products-wrapper {
-    background-color: lightgrey;
+   /* background-color: whitesmoke;*/
     margin: 20px 30px 60px 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
 }
 
 .product-card {
     width: 200px;
     height: 250px;
-    background-color: wheat;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    outline: 1px solid gainsboro;
+    outline-offset: 5px;
 }
 
 img {
     width: 100%;
+    max-height: 200px;
 }
 
 .pc-img-title {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    justify-content: space-between;
 
+    row-gap: 8px;
+    padding-bottom: 10px;
     height: 100%;
+
+    text-align: center;
+}
+
+.pc-img-title a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-style: italic;
 }
 
 .pc-price-desc {
-    display: grid;
-    grid-template-rows: repeat(2, 10px);
-
-    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
 }

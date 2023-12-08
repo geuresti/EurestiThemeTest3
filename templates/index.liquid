@@ -6,12 +6,21 @@
     {% for product in collections['all-products'].products %}
         <div class="product-card">
             <div class="pc-img-title">
+                <!--
                 <img src="{{ 'cat.PNG' | asset_img_url }}" alt="cat">
+                -->
+                <a href="{{ product.url }}">
+                    <img src="{{ product.featured_image | image_url }}">
+                </a>
                 {{- product.title | link_to: product.url }}
             </div>
             <div class="pc-price-desc">
-                <p>placeholder</p>
-                <p>placeholder</p>
+                <p> {{ product.price | money }} </p>
+                {% if product.available %}
+                    <p> Available </p>
+                {% else %}
+                    <p> Unvailable </p>
+                {% endif %}
             </div>
         </div>
     {% endfor %}
