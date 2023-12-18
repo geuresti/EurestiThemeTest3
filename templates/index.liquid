@@ -1,7 +1,5 @@
 {{ 'index.css' |  asset_url |  stylesheet_tag }}
 
-<h2> this is my index page </h2>
-
 <div class="products-wrapper">
     {% for product in collections['all-products'].products %}
         <div class="product-card">
@@ -21,7 +19,7 @@
                 {% else %}
                     <p> Unvailable </p>
                 {% endif %}
-            </div>
+            </div> 
         </div>
     {% endfor %}
 </div>

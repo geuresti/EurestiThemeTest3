@@ -1,5 +1,4 @@
 .products-wrapper {
-   /* background-color: whitesmoke;*/
     margin: 20px 30px 60px 30px;
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +7,7 @@
 
 .product-card {
     width: 200px;
-    height: 250px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -46,4 +45,24 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 0 8px;
+}
+
+@media screen and (max-width: 640px) {
+    .products-wrapper {
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .product-card {   
+        justify-content: space-between;
+
+        width: auto;
+    }
+
+    img {
+        width: 260px;
+        height: auto;
+        max-height: 400px;
+    }
+    
 }

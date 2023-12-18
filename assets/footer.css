@@ -31,6 +31,10 @@
 
 .logo {
     background-color: aqua;
+    position: relative;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 /* footer covers full width */
@@ -38,13 +42,7 @@
     .footer {
         background-color: white;
         width: 100%;
-        padding-left: 0;
-    }
-    
-    .footer-links {
-    }
-
-    .logo {
+        padding-left: 40px;
     }
 }
 
@@ -54,10 +52,17 @@
         background-color: beige;
         height: auto;
         flex-direction: column;
+        padding: 20px 0;
     }
 
     .footer-links {
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 12px;
+        align-items: center;
+    }
+    
+    .logo {
+        position: absolute;
+        left: 88vw;      
     }
 }
