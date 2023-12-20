@@ -1,6 +1,7 @@
 .products-wrapper {
     margin: 20px 30px 60px 30px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
 }
@@ -17,7 +18,7 @@
     outline-offset: 5px;
 }
 
-img {
+.product-card-img {
     width: 100%;
     max-height: 200px;
 }
@@ -59,7 +60,7 @@ img {
         width: auto;
     }
 
-    img {
+    .product-card-img {
         width: 260px;
         height: auto;
         max-height: 400px;

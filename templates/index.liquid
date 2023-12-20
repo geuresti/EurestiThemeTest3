@@ -4,11 +4,8 @@
     {% for product in collections['all-products'].products %}
         <div class="product-card">
             <div class="pc-img-title">
-                <!--
-                <img src="{{ 'cat.PNG' | asset_img_url }}" alt="cat">
-                -->
                 <a href="{{ product.url }}">
-                    <img src="{{ product.featured_image | image_url }}">
+                    <img class="product-card-img" src="{{ product.featured_image | image_url }}">
                 </a>
                 {{- product.title | link_to: product.url }}
             </div>

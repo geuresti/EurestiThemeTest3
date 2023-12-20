@@ -1,7 +1,6 @@
 
 .footer {
-    background-color: gray;
-    border: 1px solid blue;
+    background-color: whitesmoke;
 
     width: 100%;
     height: 40px;
@@ -15,13 +14,11 @@
 }
 
 .footer-links {
-    background-color: aliceblue;
-
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
 
-    width: auto;
+    align-items: center;
 }
 
 .footer-links a {
@@ -29,18 +26,17 @@
     color: black;
 }
 
-.logo {
-    background-color: aqua;
+.footer-logo {
     position: relative;
-    bottom: 30px;
+    top: 5px;
+
     width: 50px;
-    height: 50px;
+    height: auto;
 }
 
 /* footer covers full width */
 @media screen and (max-width: 900px) {
     .footer {
-        background-color: white;
         width: 100%;
         padding-left: 40px;
     }
@@ -49,7 +45,6 @@
 /* footer becomes a column */
 @media screen and (max-width: 640px) {
     .footer {
-        background-color: beige;
         height: auto;
         flex-direction: column;
         padding: 20px 0;
@@ -61,8 +56,11 @@
         align-items: center;
     }
     
-    .logo {
+    .footer-logo {
         position: absolute;
-        left: 88vw;      
+        width: 50px;
+
+        top: 150px;
+        left: 88vw;
     }
 }
